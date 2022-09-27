@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+camera_apply(cam);
+
 if (serverId == -1) {
 	draw_text(64, 64, "no server bound yet...");
 	exit;
@@ -24,3 +26,7 @@ var slot = 0; repeat (array_length(slotdata)) {
 	//}
 	++slot;
 }
+
+draw_set_color(c_red);
+draw_circle(x, y, 20, 0);
+draw_set_color(c_white);
